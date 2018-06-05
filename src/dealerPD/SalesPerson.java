@@ -42,8 +42,11 @@ public class SalesPerson {
   public boolean isOkToRemove() {
     if (getCars().size() == 0) return true; else return false;
   }
+  public String getPositionUppercase() {
+	  return getPosition().toUpperCase();
   
+  }
   public String toString() {
-    return getName();
+    return getPositionUppercase() + " " + getName();
   }
 }
